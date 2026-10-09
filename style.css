@@ -42,6 +42,9 @@
   --site-max-width:1300px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* styling for whole page */
 ul{
     list-style: none;
@@ -84,6 +87,7 @@ img{
     border-radius: var(--border-radius-s);
     background-color: var(--secondary-color);
 }
+
 
 /* navbar styling */
 header{
@@ -194,6 +198,7 @@ header .navbar{
     margin-right: 30px;
 }
 
+
 /* about section */
 .about-section{
    padding: 120px 0;
@@ -246,6 +251,7 @@ header .navbar{
     color: var(--secondary-color);
 }
 
+
 /* menu section */
 .menu-section{
     background-color: var(--dark-color);
@@ -290,7 +296,13 @@ header .navbar{
     background: var(--light-pink-color);
 }
 
+.testimonials-section .slider-wrapper{
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
 .testimonials-section .testimonial{
+    user-select: none;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -315,10 +327,22 @@ header .navbar{
     line-height: 25px;
 }
 
+.testimonials-section .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
 
+.testimonials-section .swiper-slide-button{
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
 
-
-
+.testimonials-section .swiper-slide-button:hover{
+    color: var(--primary-color);
+}
 
 
 /* gallery section */
@@ -485,7 +509,7 @@ header .navbar{
         background-color: rgba(0,0,0,0.5);
         backdrop-filter: blur(5px);
     }
-   .navbar :where(#menu-open-button, #menu-close-button){
+   .navbar :is(#menu-open-button, #menu-close-button){
     display: block;
     font-size: var(--font-size-xxl);
    }
@@ -602,6 +626,14 @@ header .navbar{
      .menu-section .menu-list .menu-item,
      .gallery-section .gallery-list .gallery-item{
       width: 100%;
+    }
+
+    .testimonials-section .swiper-slide-button{
+        display: none;
+    }
+
+    .testimonials-section .slider-wrapper{
+        margin: 0 0 30px;
     }
 
     .footer-section .section-content{

@@ -6,6 +6,8 @@
     <title>Coffee_Website</title>
     <!-- link to font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+   <!-- linking to swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,22 +22,22 @@
               <button id="menu-close-button" class="fas fa-times"></button>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">home</a>
+                    <a href="#" class="nav-link">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">about</a>
+                    <a href="#about" class="nav-link">about</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">menu</a>
+                    <a href="#menu" class="nav-link">menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">testimonial</a>
+                    <a href="#testimonial" class="nav-link">testimonial</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">gallery</a>
+                    <a href="#gallery" class="nav-link">gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">contact</a>
+                    <a href="#contact" class="nav-link">contact</a>
                 </li>
             </ul>
 
@@ -65,7 +67,7 @@
 
 
  <!-- about section -->
-  <section class="about-section">
+  <section class="about-section " id="about">
     <div class="section-content">
         
         <div class="about-image-wrapper">
@@ -87,7 +89,7 @@
 
 
 <!-- menu section -->
- <section class="menu-section">
+ <section class="menu-section" id="menu">
     <h2 class="section-title">our menu</h2>
     <div class="section-content">
        <ul class="menu-list">
@@ -150,49 +152,53 @@
  </section>
 
  <!-- testimonial -->
-  <section class="testimonials-section">
+  <section class="testimonials-section" id="testimonial">
     <h2 class="section-title">testimonial</h2>
     <div class="section-content">
-       <div class="slider-container">
+       <div class="slider-container swiper">
         <div class="slider-wrapper">
-            <ul class="testimonial-list">
-                <li class="testimonial">
+            <ul class="testimonial-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
                     <img src="./images/user-1.jpg" alt="user" class="user-image">
                     <h3 class="name">sarah johnson</h3>
                     <i class="feetback">"loved the french toast. perfectly balance and rich. will order again!"</i>
                 </li>
 
-                   <li class="testimonial">
+                   <li class="testimonial swiper-slide">
                     <img src="./images/user-2.jpg" alt="user" class="user-image">
                     <h3 class="name">james willson</h3>
                     <i class="feetback">" great expresso blend! smooth and bold flavor. fast shipping tool!"</i>
                 </li>
 
-                   <li class="testimonial">
+                   <li class="testimonial swiper-slide">
                     <img src="./images/user-3.jpg" alt="user" class="user-image">
                     <h3 class="name">michael brown</h3>
                     <i class="feetback">"fantastic mocha flavor. fresh and aromatic. quick shipping!"</i>
                 </li>
 
-                   <li class="testimonial">
+                   <li class="testimonial swiper-slide">
                     <img src="./images/user-4.jpg" alt="user" class="user-image">
                     <h3 class="name">emily harris</h3>
                     <i class="feetback">"excellent quality! fresh beans and quick delivery. highly recommend."</i>
                 </li>
 
-                   <li class="testimonial">
+                   <li class="testimonial swiper-slide">
                     <img src="./images/user-5.jpg" alt="user" class="user-image">
                     <h3 class="name">anthony thompson</h3>
                     <i class="feetback">"best decaf i've tried smooth and flavorful. arrived promptly."</i>
                 </li>
             </ul>
+
+             <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
         </div>
        </div>
     </div>
   </section>
 
 <!-- gallery section -->
- <section class="gallery-section">
+ <section class="gallery-section" id="gallery">
     <h2 class="section-title">gallery</h2>
     <div class="section-content">
         <ul class="gallery-list">
@@ -224,7 +230,7 @@
  </section>
 
  <!-- contact us -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <h2 class="section-title">contact us</h2>
     <div class="section-content">
        <ul class="contact-info-list">
@@ -281,13 +287,18 @@
 
     <p class="policy-text">
       <a href="#" class="policy-link">privacy policy</a>
-      <span class="separator">.</span>
+      <span class="separator">&#8226;</span>
        <a href="#" class="policy-link">refund policy</a>
     </p>
     </div>
    </footer>
 
 <!-- </main> -->
+
+
+<!-- linking to swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- linking to custom script -->
     <script src="./app.js"></script>
 </body>
 </html>
