@@ -202,6 +202,7 @@ header .navbar{
 /* about section */
 .about-section{
    padding: 120px 0;
+    scroll-margin-top: 100px;
    background-color: var(--light-pink-color);
 }
 
