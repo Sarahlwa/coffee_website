@@ -18,7 +18,10 @@ A modern coffee shop website built using HTML, CSS, and JavaScript. This project
 - **JavaScript** – Interactive functionality
 
 ## 📸 Screenshots
-
+![image alt](https://github.com/Sarahlwa/coffee_website/blob/9193b7a3c72f57a1b4e17b063ff84585e18f52e9/screenshots/Screenshot%202026-10-12%20113534.png)
+![image alt](https://github.com/Sarahlwa/coffee_website/blob/9193b7a3c72f57a1b4e17b063ff84585e18f52e9/screenshots/Screenshot%202026-10-12%20113617.png)
+![image alt](https://github.com/Sarahlwa/coffee_website/blob/9193b7a3c72f57a1b4e17b063ff84585e18f52e9/screenshots/Screenshot%202026-10-12%20113635.png)
+![image alt](https://github.com/Sarahlwa/coffee_website/blob/9193b7a3c72f57a1b4e17b063ff84585e18f52e9/screenshots/Screenshot%202026-10-12%20114555.png)
 
 ## 🚀 Getting Started
 
